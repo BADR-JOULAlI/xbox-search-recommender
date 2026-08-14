@@ -1,0 +1,9 @@
+{
+  "model": "tfidf_word_char",
+  "word_vocabulary": 127,
+  "char_vocabulary": 783,
+  "map@5": 1.0,
+  "recall@5": 1.0,
+  "mrr@5": 1.0,
+  "hit_rate@5": 1.0
+}
