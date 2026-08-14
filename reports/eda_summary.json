@@ -1,0 +1,14 @@
+{
+  "source": "synthetic-demo",
+  "train_rows": 72,
+  "test_rows": 3,
+  "product_rows": 10,
+  "unique_queries_raw": 18,
+  "unique_queries_normalized": 18,
+  "unique_clicked_skus": 10,
+  "missing_query_time": 0,
+  "missing_click_time": 0,
+  "duplicate_click_rows": 0,
+  "products_without_title": 0,
+  "products_without_description": 0
+}
