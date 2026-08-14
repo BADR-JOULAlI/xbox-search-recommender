@@ -1,0 +1,19 @@
+{
+  "model": "weighted_hybrid",
+  "device": "cuda",
+  "weights": {
+    "exact": 0.4,
+    "word": 0.15,
+    "char": 0.15,
+    "semantic": 0.2,
+    "popularity": 0.1
+  },
+  "ranker_decision": {
+    "lightgbm_trained": false,
+    "reason": "dataset de démonstration trop petit"
+  },
+  "map@5": 0.9,
+  "recall@5": 1.0,
+  "mrr@5": 0.9,
+  "hit_rate@5": 1.0
+}
