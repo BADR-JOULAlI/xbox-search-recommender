@@ -16,9 +16,28 @@ Le projet est conçu en mode **notebook-first** : l'exploration, l'entraînement
 
 ## Statut
 
-Le dépôt vient d'être initialisé. Les notebooks seront ajoutés et poussés progressivement après exécution et validation.
+Le dépôt est développé par jalons. Chaque notebook est exécuté et validé avant son push.
+
+## Installation rapide sous PowerShell
+
+```powershell
+uv python install 3.11
+uv venv --python 3.11 .venv
+uv pip install --python .venv\Scripts\python.exe -r requirements-cuda.txt
+uv pip install --python .venv\Scripts\python.exe -r requirements.txt
+```
+
+PyTorch 2.11 avec CUDA 12.8 est utilisé afin de prendre en charge l'architecture Blackwell des RTX 50. Le projet détecte CUDA au runtime et conserve un fallback CPU.
+
+Pour accéder aux données Kaggle :
+
+```powershell
+.\.venv\Scripts\kaggle.exe auth login
+.\.venv\Scripts\kaggle.exe competitions download -c acm-sf-chapter-hackathon-small -p data/raw
+```
+
+L'authentification Kaggle reste locale et ne doit jamais être ajoutée au dépôt.
 
 ## Sécurité des données
 
 Le dataset Kaggle, les tokens, les caches, les embeddings et les artefacts volumineux ne sont pas suivis par Git.
-
