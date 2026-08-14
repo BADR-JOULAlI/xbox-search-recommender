@@ -1,0 +1,22 @@
+project:
+  seed: 42
+  top_k: 5
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  artifacts: artifacts
+  reports: reports
+
+semantic:
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  batch_size: auto
+  use_fp16: true
+
+ranking:
+  exact_click_weight: 0.40
+  word_tfidf_weight: 0.15
+  char_tfidf_weight: 0.15
+  semantic_weight: 0.20
+  popularity_weight: 0.10
+

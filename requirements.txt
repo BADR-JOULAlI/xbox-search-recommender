@@ -1,0 +1,21 @@
+# Runtime versions will be locked after the environment notebook validates CUDA.
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+pyyaml
+joblib
+jupyterlab
+nbclient
+nbformat
+sentence-transformers
+faiss-cpu
+lightgbm
+gradio
+kaggle
+huggingface-hub
+pytest
+ruff
+

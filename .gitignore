@@ -1,0 +1,41 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+kaggle.json
+*.token
+
+# Data and generated ML artifacts
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+artifacts/*
+!artifacts/.gitkeep
+reports/executed-notebooks/*
+!reports/executed-notebooks/.gitkeep
+
+# Model/download caches
+.cache/
+huggingface/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local Codex workspace folders
+work/
+outputs/
+graphify-out/
+
