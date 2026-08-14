@@ -5,7 +5,7 @@
   "columns": [
     "sku"
   ],
-  "seconds": 4.83168060000753,
+  "seconds": 7.715522099999362,
   "eligible_for_kaggle": false,
   "output": "submissions\\predictions.csv"
 }

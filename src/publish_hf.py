@@ -6,8 +6,6 @@ import argparse
 import os
 from pathlib import Path
 
-from huggingface_hub import HfApi
-
 APPROVED_FILENAMES = {
     "manifest.json",
     "hybrid_config.json",
@@ -58,6 +56,8 @@ def main() -> None:
     token = os.getenv("HF_TOKEN")
     if not token:
         raise SystemExit("HF_TOKEN absent de l'environnement.")
+
+    from huggingface_hub import HfApi
 
     api = HfApi(token=token)
     api.create_repo(repo_id=args.repo_id, repo_type="model", private=args.private, exist_ok=True)

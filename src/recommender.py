@@ -6,12 +6,9 @@ import json
 from pathlib import Path
 from typing import Any
 
-import faiss
 import joblib
 import numpy as np
 import pandas as pd
-import torch
-from sentence_transformers import SentenceTransformer
 
 from src.artifact_loader import validate_manifest
 from src.preprocessing import normalize_query, normalize_text
@@ -36,6 +33,9 @@ class HybridRecommender:
     """Load persisted lexical, semantic, click-history, and popularity signals."""
 
     def __init__(self, artifact_dir: Path, device: str | None = None) -> None:
+        import faiss
+        import torch
+
         self.artifact_dir = Path(artifact_dir)
         manifest_path = self.artifact_dir / "manifest.json"
         if manifest_path.exists():
@@ -71,11 +71,13 @@ class HybridRecommender:
             0, self.semantic_index.ntotal
         )
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
-        self._semantic_model: SentenceTransformer | None = None
+        self._semantic_model: Any | None = None
 
     @property
-    def semantic_model(self) -> SentenceTransformer:
+    def semantic_model(self) -> Any:
         if self._semantic_model is None:
+            from sentence_transformers import SentenceTransformer
+
             self._semantic_model = SentenceTransformer(self.model_name, device=self.device)
         return self._semantic_model
 
@@ -125,4 +127,3 @@ class HybridRecommender:
         numeric_columns = ["score", "exact", "lexical", "semantic", "popularity"]
         records[numeric_columns] = records[numeric_columns].round(6)
         return records.to_dict(orient="records")
-
