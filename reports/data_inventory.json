@@ -1,0 +1,29 @@
+{
+  "source": "synthetic-demo",
+  "raw_files": [
+    ".gitkeep"
+  ],
+  "train_rows": 72,
+  "test_rows": 3,
+  "train_columns": [
+    "user",
+    "sku",
+    "category",
+    "query",
+    "click_time",
+    "query_time"
+  ],
+  "test_columns": [
+    "user",
+    "category",
+    "query",
+    "query_time"
+  ],
+  "expected_kaggle_files": [
+    "train.csv",
+    "test.csv",
+    "small_product_data.xml",
+    "popular_skus.csv",
+    "popular_skus.py"
+  ]
+}
