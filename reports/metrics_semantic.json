@@ -1,0 +1,12 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "device": "cuda",
+  "embedding_dimension": 384,
+  "product_count": 10,
+  "encoding_seconds": 28.94834409999021,
+  "faiss_backend": "cpu-index-flat-ip",
+  "map@5": 1.0,
+  "recall@5": 1.0,
+  "mrr@5": 1.0,
+  "hit_rate@5": 1.0
+}
