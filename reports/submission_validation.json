@@ -1,0 +1,11 @@
+{
+  "status": "valid",
+  "source": "synthetic-demo",
+  "rows": 3,
+  "columns": [
+    "sku"
+  ],
+  "seconds": 4.83168060000753,
+  "eligible_for_kaggle": false,
+  "output": "submissions\\predictions.csv"
+}
