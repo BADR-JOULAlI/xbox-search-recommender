@@ -1,0 +1,18 @@
+{
+  "model": "global_popularity",
+  "split": "group_shuffle_by_query_key",
+  "fit_rows": 52,
+  "validation_rows": 20,
+  "validation_queries": 5,
+  "top_skus": [
+    "1001",
+    "1002",
+    "1003",
+    "1005",
+    "1006"
+  ],
+  "map@5": 0.04,
+  "recall@5": 0.2,
+  "mrr@5": 0.04,
+  "hit_rate@5": 0.2
+}
