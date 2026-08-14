@@ -1,0 +1,15 @@
+{
+  "source": "synthetic-demo",
+  "artifact_count": 10,
+  "total_bytes": 51374,
+  "integrity": "ok",
+  "smoke_query": "space shooter",
+  "smoke_skus": [
+    "1001",
+    "1007",
+    "1004",
+    "1005",
+    "1002"
+  ],
+  "redistributable": false
+}
