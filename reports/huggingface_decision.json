@@ -1,0 +1,22 @@
+{
+  "publish": false,
+  "repository_visibility": "private",
+  "source": "synthetic-demo",
+  "license_confirmed": false,
+  "candidate_files": [
+    "char_product_matrix.joblib",
+    "char_tfidf.joblib",
+    "click_history.json",
+    "hybrid_config.json",
+    "manifest.json",
+    "popularity.json",
+    "products.csv",
+    "semantic.index",
+    "semantic_skus.json",
+    "word_product_matrix.joblib",
+    "word_tfidf.joblib"
+  ],
+  "total_bytes": 53035,
+  "reason": "Artefacts produits à partir du corpus synthétique : publication sans intérêt.",
+  "message": "Aucun artefact ne nécessite actuellement une publication sur Hugging Face."
+}
