@@ -1,0 +1,8 @@
+{
+  "status": "ok",
+  "device": "cuda",
+  "result_count": 5,
+  "unique_skus": 5,
+  "launch_command": ".\\.venv\\Scripts\\python.exe -m src.app",
+  "url": "http://127.0.0.1:7860"
+}
